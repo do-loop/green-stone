@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GreenStone.StateMachine\GreenStone.StateMachine.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GreenStone.StateMachine.Procedure.QuotationRequest\GreenStone.StateMachine.Procedure.QuotationRequest.csproj" />
+    <ProjectReference Include="..\GreenStone.StateMachine.Procedure\GreenStone.StateMachine.Procedure.csproj" />
+    <ProjectReference Include="..\GreenStone.StateMachine\GreenStone.StateMachine.csproj" />
+  </ItemGroup>
+
+</Project>
