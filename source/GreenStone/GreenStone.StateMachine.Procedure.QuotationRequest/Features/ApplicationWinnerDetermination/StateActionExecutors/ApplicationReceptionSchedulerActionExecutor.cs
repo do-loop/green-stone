@@ -2,7 +2,7 @@
 {
     using System;
     using Models;
-    using StateActions;
+    using StateActions.PublishProtocol;
 
     /// <inheritdoc />
     public sealed class ApplicationWinnerDeterminationPublishProtocolActionExecutor : ProcedureStateActionExecutor<ApplicationWinnerDeterminationState, PublishProtocolStateAction>

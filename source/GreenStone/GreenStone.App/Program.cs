@@ -10,7 +10,7 @@
     using StateMachine.Procedure.QuotationRequest.Features.ApplicationConsideration;
     using StateMachine.Procedure.QuotationRequest.Features.ApplicationReception;
     using StateMachine.Procedure.QuotationRequest.Features.ApplicationWinnerDetermination;
-    using StateMachine.Procedure.QuotationRequest.Features.ApplicationWinnerDetermination.StateActions;
+    using StateMachine.Procedure.QuotationRequest.Features.ApplicationWinnerDetermination.StateActions.PublishProtocol;
     using StateMachine.Procedure.QuotationRequest.StateActions;
     using StateMachine.Registration;
 
@@ -44,13 +44,16 @@
             // 4. Заключение контракта.
 
             var data = new PublishProtocolStateActionData();
+            var action = new PublishProtocolStateAction(data);
 
             container.Resolve<IStateMachineFactory<Procedure>>().Create(procedure)
                 .Execute(procedure, new SchedulerStateAction())
                 .Execute(procedure, new SchedulerStateAction())
-                .Execute(procedure, new PublishProtocolStateAction(data));
+                .Execute(procedure, action);
 
+            Console.WriteLine(action.Result.BlockMoneySagas.Count); // 3
             Console.WriteLine(procedure.State); // Заключение контракта.
+
             Console.ReadKey();
         }
     }

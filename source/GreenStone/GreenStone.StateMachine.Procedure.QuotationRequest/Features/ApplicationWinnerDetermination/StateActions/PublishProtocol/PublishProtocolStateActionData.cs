@@ -1,4 +1,4 @@
-﻿namespace GreenStone.StateMachine.Procedure.QuotationRequest.Features.ApplicationWinnerDetermination.StateActions
+﻿namespace GreenStone.StateMachine.Procedure.QuotationRequest.Features.ApplicationWinnerDetermination.StateActions.PublishProtocol
 {
     /// <summary>
     /// Данные для выполнения действия публикации протокола.

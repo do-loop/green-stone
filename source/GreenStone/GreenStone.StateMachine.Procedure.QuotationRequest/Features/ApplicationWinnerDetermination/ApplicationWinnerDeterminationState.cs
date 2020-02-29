@@ -1,7 +1,7 @@
 ﻿namespace GreenStone.StateMachine.Procedure.QuotationRequest.Features.ApplicationWinnerDetermination
 {
     using Models;
-    using StateActions;
+    using StateActions.PublishProtocol;
 
     /// <inheritdoc />
     [StateAction(typeof(PublishProtocolStateAction))]
