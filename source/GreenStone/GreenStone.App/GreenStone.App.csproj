@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GreenStone.StateMachine.Procedure.QuotationRequest\GreenStone.StateMachine.Procedure.QuotationRequest.csproj" />
+    <ProjectReference Include="..\GreenStone.StateMachine.Application.QuotationRequest\GreenStone.StateMachine.Application.QuotationRequest.csproj" />
     <ProjectReference Include="..\GreenStone.StateMachine.Procedure\GreenStone.StateMachine.Procedure.csproj" />
     <ProjectReference Include="..\GreenStone.StateMachine\GreenStone.StateMachine.csproj" />
   </ItemGroup>

@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenStone.App", "GreenSton
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".app", ".app", "{0368DD8E-3242-42FD-917C-FA2680179F33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenStone.StateMachine.Procedure", "GreenStone.StateMachine.Procedure\GreenStone.StateMachine.Procedure.csproj", "{4072F8B8-43E8-4DC6-A4B5-2F55A47F6725}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenStone.StateMachine.Procedure", "GreenStone.StateMachine.Procedure\GreenStone.StateMachine.Procedure.csproj", "{4072F8B8-43E8-4DC6-A4B5-2F55A47F6725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenStone.StateMachine.Procedure.QuotationRequest", "GreenStone.StateMachine.Procedure.QuotationRequest\GreenStone.StateMachine.Procedure.QuotationRequest.csproj", "{017A2EAB-E9C7-42E9-A9DF-C89872CB34A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenStone.StateMachine.Procedure.QuotationRequest", "GreenStone.StateMachine.Procedure.QuotationRequest\GreenStone.StateMachine.Procedure.QuotationRequest.csproj", "{017A2EAB-E9C7-42E9-A9DF-C89872CB34A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenStone.StateMachine.Application", "GreenStone.StateMachine.Application\GreenStone.StateMachine.Application.csproj", "{C5CA6D0C-9571-4845-9BEE-017FF03F67E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenStone.StateMachine.Application.QuotationRequest", "GreenStone.StateMachine.Application.QuotationRequest\GreenStone.StateMachine.Application.QuotationRequest.csproj", "{F5E6EF9B-81E2-4BBA-A2FD-41DCA1EA7107}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,14 @@ Global
 		{017A2EAB-E9C7-42E9-A9DF-C89872CB34A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{017A2EAB-E9C7-42E9-A9DF-C89872CB34A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{017A2EAB-E9C7-42E9-A9DF-C89872CB34A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5CA6D0C-9571-4845-9BEE-017FF03F67E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CA6D0C-9571-4845-9BEE-017FF03F67E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CA6D0C-9571-4845-9BEE-017FF03F67E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CA6D0C-9571-4845-9BEE-017FF03F67E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E6EF9B-81E2-4BBA-A2FD-41DCA1EA7107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E6EF9B-81E2-4BBA-A2FD-41DCA1EA7107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E6EF9B-81E2-4BBA-A2FD-41DCA1EA7107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E6EF9B-81E2-4BBA-A2FD-41DCA1EA7107}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

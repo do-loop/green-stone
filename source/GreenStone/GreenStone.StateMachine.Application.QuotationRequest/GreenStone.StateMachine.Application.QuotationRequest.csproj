@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GreenStone.StateMachine.Application.QuotationRequest\GreenStone.StateMachine.Application.QuotationRequest.csproj" />
-    <ProjectReference Include="..\GreenStone.StateMachine.Procedure\GreenStone.StateMachine.Procedure.csproj" />
+    <ProjectReference Include="..\GreenStone.StateMachine.Application\GreenStone.StateMachine.Application.csproj" />
     <ProjectReference Include="..\GreenStone.StateMachine\GreenStone.StateMachine.csproj" />
   </ItemGroup>
 

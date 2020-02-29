@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GreenStone.StateMachine.Application\GreenStone.StateMachine.Application.csproj" />
     <ProjectReference Include="..\GreenStone.StateMachine\GreenStone.StateMachine.csproj" />
   </ItemGroup>
 

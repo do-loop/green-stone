@@ -1,5 +1,8 @@
 ﻿namespace GreenStone.StateMachine.Procedure.Models
 {
+    using System.Collections.Generic;
+    using Application.Models;
+
     /// <summary>
     /// Процедура.
     /// </summary>
@@ -24,5 +27,10 @@
         /// Тип процедуры.
         /// </summary>
         public ProcedureType Type { get; set; } = ProcedureType.QuotationRequest;
+
+        /// <summary>
+        /// Заявки.
+        /// </summary>
+        public List<Application> Applications = new List<Application>();
     }
 }
