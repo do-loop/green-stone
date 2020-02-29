@@ -24,8 +24,8 @@
 
             var assemblies = new[]
             {
-                typeof(ProcedureStateMachineDescriptor).Assembly,
-                typeof(QuotationRequestProcedureStateMachineDescriptor).Assembly,
+                typeof(ProcedureStateMachine).Assembly,
+                typeof(StateActionExecutionContextExtensions).Assembly
             };
 
             container.AddStateMachine<Procedure>(assemblies)
@@ -46,7 +46,7 @@
             var data = new PublishProtocolStateActionData();
             var action = new PublishProtocolStateAction(data);
 
-            container.Resolve<IStateMachineFactory<Procedure>>().Create(procedure)
+            container.Resolve<IStateMachine<Procedure>>()
                 .Execute(procedure, new SchedulerStateAction())
                 .Execute(procedure, new SchedulerStateAction())
                 .Execute(procedure, action);

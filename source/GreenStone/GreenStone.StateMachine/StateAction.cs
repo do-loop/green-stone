@@ -18,23 +18,23 @@
     /// <summary>
     /// Действие.
     /// </summary>
-    public interface IStateAction<out TIn>
+    public interface IStateAction<out TData>
     {
         /// <summary>
         /// Данные для выполнения действия.
         /// </summary>
-        TIn Data { get; }
+        TData Data { get; }
     }
 
     /// <summary>
     /// Действие.
     /// </summary>
-    public interface IStateAction<out TIn, out TOut> : IStateAction<TIn> where TOut: new()
+    public interface IStateAction<out TData, out TResult> : IStateAction<TData> where TResult: new()
     {
         /// <summary>
         /// Результат выполнения действия.
         /// </summary>
-        TOut Result { get; }
+        TResult Result { get; }
     }
 
     /// <inheritdoc />

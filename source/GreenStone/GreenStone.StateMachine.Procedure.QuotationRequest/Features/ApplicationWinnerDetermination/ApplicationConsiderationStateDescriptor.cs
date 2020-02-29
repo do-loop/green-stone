@@ -8,7 +8,8 @@
         /// <inheritdoc />
         public override bool Selectable(Procedure subject)
         {
-            return subject.State == ProcedureStateEnum.ApplicationWinnerDetermination;
+            return subject.Type == ProcedureType.QuotationRequest &&
+                   subject.State == ProcedureStateEnum.ApplicationWinnerDetermination;
         }
     }
 }

@@ -20,8 +20,6 @@
 
             container.AddBasedOn(assemblies, typeof(IState<TSubject>));
             container.AddBasedOn(assemblies, typeof(IStateMachine<TSubject>));
-            container.AddBasedOn(assemblies, typeof(IStateMachineFactory<TSubject>));
-            container.AddBasedOn(assemblies, typeof(IStateMachineDescriptor<TSubject>));
 
             return new StateMachineRegistrationSyntax<TSubject>(container, assemblies);
         }

@@ -9,11 +9,6 @@
     public interface IStateMachine<in TSubject> where TSubject : class
     {
         /// <summary>
-        /// Дескриптор машины состояний.
-        /// </summary>
-        IStateMachineDescriptor<TSubject> Descriptor { get; }
-
-        /// <summary>
         /// Выполняет указанное действие.
         /// </summary>
         IStateMachine<TSubject> Execute(TSubject subject, IStateAction action);
@@ -25,14 +20,10 @@
         protected readonly IEnumerable<IState<TSubject>> States;
 
         /// <inheritdoc />
-        protected StateMachine(IEnumerable<IState<TSubject>> states, IStateMachineDescriptor<TSubject> descriptor)
+        protected StateMachine(IEnumerable<IState<TSubject>> states)
         {
             States = states;
-            Descriptor = descriptor;
         }
-
-        /// <inheritdoc />
-        public IStateMachineDescriptor<TSubject> Descriptor { get; }
 
         /// <inheritdoc />
         public IStateMachine<TSubject> Execute(TSubject subject, IStateAction action)

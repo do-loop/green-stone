@@ -7,8 +7,6 @@
     public sealed class ProcedureStateMachine : StateMachine<Procedure>
     {
         /// <inheritdoc />
-        public ProcedureStateMachine(IEnumerable<IState<Procedure>> states, IStateMachineDescriptor<Procedure> descriptor)
-            : base(states, descriptor)
-        { }
+        public ProcedureStateMachine(IEnumerable<IState<Procedure>> states) : base(states) { }
     }
 }
